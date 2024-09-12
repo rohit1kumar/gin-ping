@@ -9,7 +9,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	"github.com/rohit1kumar/pgo/controllers"
-	"github.com/rohit1kumar/pgo/models"
 )
 
 func init() {
@@ -17,9 +16,7 @@ func init() {
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
-
 	config.ConnectToDB()
-	config.DB.AutoMigrate(&models.Post{})
 }
 
 func main() {
