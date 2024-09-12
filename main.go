@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/rohit1kumar/pgo/config"
 	"log"
+	"net/http"
 	"os"
 
 	"github.com/gin-gonic/gin"
@@ -25,6 +26,12 @@ func main() {
 	r := gin.Default()
 	r.SetTrustedProxies(nil)
 
+	r.GET("/", func(c *gin.Context) {
+		c.String(http.StatusOK, config.GetRandomJoke())
+	})
+	r.GET("/healthz", func(c *gin.Context) {
+		c.Status(http.StatusOK)
+	})
 	r.POST("/posts", controllers.CreatePost)
 	r.GET("/posts", controllers.GetPosts)
 	r.GET("/posts/:id", controllers.GetPostById)
