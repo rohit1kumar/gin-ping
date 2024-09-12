@@ -1,18 +1,14 @@
 package main
 
-import "github.com/joho/godotenv"
-
 import (
+	"github.com/joho/godotenv"
 	"github.com/rohit1kumar/pgo/config"
 	"github.com/rohit1kumar/pgo/models"
 	"log"
 )
 
 func init() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	godotenv.Load()
 	config.ConnectToDB()
 }
 
