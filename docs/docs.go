@@ -290,7 +290,7 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0",
-	Host:             "http://localhost:3000",
+	Host:             "https://gin-ping.onrender.com",
 	BasePath:         "",
 	Schemes:          []string{},
 	Title:            "GinPing API",

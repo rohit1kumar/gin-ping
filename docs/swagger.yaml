@@ -14,7 +14,7 @@ definitions:
       updated_at:
         type: string
     type: object
-host: http://localhost:3000
+host: https://gin-ping.onrender.com
 info:
   contact:
     email: <email>

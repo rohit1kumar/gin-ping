@@ -22,7 +22,7 @@ import (
 // @contact.email <email>
 // @license.name Apache 2.0
 // @license.url http://www.apache.org/licenses/LICENSE-2.0.html
-// @host http://localhost:3000
+// @host https://gin-ping.onrender.com
 func init() {
 	godotenv.Load()
 	config.ConnectToDB()
