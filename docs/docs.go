@@ -290,9 +290,9 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0",
-	Host:             "https://gin-ping.onrender.com",
+	Host:             "localhost:3000",
 	BasePath:         "",
-	Schemes:          []string{},
+	Schemes:          []string{"https", "http"},
 	Title:            "GinPing API",
 	Description:      "This is a sample API built with Go and Postgres.",
 	InfoInstanceName: "swagger",

@@ -1,4 +1,8 @@
 {
+    "schemes": [
+        "https",
+        "http"
+    ],
     "swagger": "2.0",
     "info": {
         "description": "This is a sample API built with Go and Postgres.",
@@ -14,7 +18,7 @@
         },
         "version": "1.0"
     },
-    "host": "https://gin-ping.onrender.com",
+    "host": "localhost:3000",
     "paths": {
         "/posts": {
             "get": {

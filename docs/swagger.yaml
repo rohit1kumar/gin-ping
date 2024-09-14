@@ -14,7 +14,7 @@ definitions:
       updated_at:
         type: string
     type: object
-host: https://gin-ping.onrender.com
+host: localhost:3000
 info:
   contact:
     email: <email>
@@ -185,4 +185,7 @@ paths:
       summary: Update a post
       tags:
       - posts
+schemes:
+- https
+- http
 swagger: "2.0"
